@@ -292,7 +292,7 @@ h5 a:hover {
 @media(max-width:979px){
 
   #logopic {
-    visibility: hidden;
+    display: none;
   }
 }
 
@@ -316,7 +316,7 @@ h5 a:hover {
   }
   #header h1,
   #header nav {
-    /*float: none;*/
+    float: none;
     display: inline-block;
   }
   #header nav {

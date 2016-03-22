@@ -292,7 +292,7 @@ h5 a:hover {
 @media(max-width:979px){
 
   #logopic {
-    visibility: hidden;
+    display: none;
   }
 }
 

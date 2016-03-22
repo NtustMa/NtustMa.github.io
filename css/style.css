@@ -292,7 +292,7 @@ h5 a:hover {
 @media(max-width:979px){
 
   #logopic {
-    display: none;
+    visibility: hidden;
   }
 }
 
@@ -316,7 +316,7 @@ h5 a:hover {
   }
   #header h1,
   #header nav {
-    float: none;
+    /*float: none;*/
     display: inline-block;
   }
   #header nav {
@@ -1234,6 +1234,7 @@ p {
   padding: 45px 0 0 0;
   height: 140px;
   font-family: Microsoft JhengHei;
+  line-height: 50px;
 
 }
 

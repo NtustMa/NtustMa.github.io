@@ -780,11 +780,25 @@ p {
 .index .block-2 h4 {
   margin-bottom: 25px;
 }
+
+@media(min-width: 675px){
+
+.index .block-2 p {
+  width: 66%;
+  margin: 0 auto;
+  line-height: 30px;　　
+}
+}
+
+@media(max-width: 674px){
+
 .index .block-2 p {
   width: 100%;
   margin: 0 auto;
   line-height: 30px;　　
 }
+}
+
 .index .block-2 .btn {
   margin-top: 33px;
   width: 278px;

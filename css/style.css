@@ -351,11 +351,11 @@ h5 a:hover {
 }
 .sf-menu > li > a:hover:after {
   content: "";
-  height: 4px;
+  height: 8px;
   width: 100%;
   background: #87CEFA;
   position: absolute;
-  bottom: -30px;
+  bottom: -20px;
   left: 0;
 }
 .sf-menu > li:first-child {
@@ -364,13 +364,14 @@ h5 a:hover {
 .sf-menu > li.current > a {
   color: #ffffff;
 }
+
 .sf-menu > li.current > a:after {
   content: "";
-  height: 4px;
+  height: 8px;
   width: 100%;
   background: #87CEFA;
   position: absolute;
-  bottom: -30px;
+  bottom: -20px;
   left: 0;
 }
 @media only screen and (max-width: 979px) {
@@ -1369,7 +1370,7 @@ p {
 #toTop {
   display: none;
   background: #192A5C;
-  background: url(../images/up_icon.png) 0 10px no-repeat;
+  /*background: url(../images/up_icon.png) 0 10px no-repeat;*/
   text-decoration: none;
   position: fixed;
   bottom: 80px;

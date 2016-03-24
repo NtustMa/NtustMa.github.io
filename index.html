@@ -9,7 +9,13 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/camera.css">
 	<link rel="stylesheet" href="css/owl.carousel.css">
+  <style>
+  .NewsContentCrawler a {
+      font: 20px/24px Microsoft JhengHei;
+      color: #727070;
+  }
 
+  </style>
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
 
 	<script src="js/jquery.js"></script>
@@ -55,13 +61,21 @@
         });
       }
 
-      var requestUrl = 'https://rawgit.com/log3log4771/NTUST_MA_NewsTitle/master/MaNewsCrawler.text'
+      // var requestUrl = 'https://rawgit.com/log3log4771/NTUST_MA_NewsTitle/master/MaNewsCrawler.text'
 
-      $.get(requestUrl, function(response) {
+      // $.get(requestUrl, function(response) {
+      //   var data = JSON.parse(response);
+      //   for (var i in data) {
+      //     $('.NewsContentCrawler').append("<p>" + data[i] + "</p>"+"<br>");
+      //   }});
+
+      var requestUrl = "https://rawgit.com/log3log4771/NTUST_MA_NewsTitle/master/test.txt"
+        $.get(requestUrl, function(response) {
         var data = JSON.parse(response);
-        for (var i in data) {
-          $('.NewsContentCrawler').append("<p>" + data[i] + "</p>"+"<br>");
+        for (var i = 0; i < 5; i++) {
+          $('.NewsContentCrawler').append("<a href = '"+data[i+5]+"'>" + data[i] + "</a>"+"<br>"+"<br>");
         }});
+
     });
 
 
